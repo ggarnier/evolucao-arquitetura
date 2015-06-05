@@ -1,4 +1,3 @@
-# arquitetura original
+## arquitetura original
 
-"monolítica"
-globotv, catalogo, globotv-api
+<img src="static/globotv.svg" />

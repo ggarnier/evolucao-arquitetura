@@ -1,4 +1,7 @@
 ## 2013/2014 - Globosat Play
 
+### Desafios
+
+- manter a identidade visual entre os projetos
 - necessidade de compartilhamento de APIs e componentes
-- necessidade de manter o globotv funcionando e evoluir a plataforma para receber o Globosat Play
+- evoluir a plataforma para manter o Globo.TV e receber o Globosat Play
