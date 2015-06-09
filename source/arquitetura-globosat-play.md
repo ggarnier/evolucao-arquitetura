@@ -1,6 +1,3 @@
-## 2013/2014 - Globosat Play
+## Nova arquitetura
 
-### Nova arquitetura
-
-globosat-play, filmes, programas
-plataforma: busca, listas, login
+<img src="static/globosat-play2.png" />
