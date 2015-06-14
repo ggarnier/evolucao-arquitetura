@@ -1,6 +1,6 @@
 ## Evolução da infra
 
-<img src="static/tsuru.svg" style="background-color: transparent" />
+<img src="static/tsuru.svg" class="transparent" />
 
 https://tsuru.io/
 

@@ -24,6 +24,11 @@
 			.reveal section img {
 				border: 0;
 			}
+
+			.reveal section img.transparent {
+				background-color: transparent;
+				box-shadow: none;
+			}
 		</style>
 
 		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
@@ -160,7 +165,7 @@
         <script type="text/template">
           # 2014
 
-<img src="static/logo_globosatplay.png" style="background-color: transparent" />
+<img src="static/logo_globosatplay.png" class="transparent" />
 
 - Acervo dos canais Globosat
 - Transmissões ao vivo
@@ -172,9 +177,9 @@
 
       <section data-markdown>
         <script type="text/template">
-          ## 2013/2014 - Globosat Play
+          <img src="static/logo_globosatplay.png" class="transparent" />
 
-### Desafios
+## Desafios
 
 - manter a consistência entre os projetos
 - compartilhar APIs e componentes
@@ -215,7 +220,7 @@
 
 - Cache
 - Circuit breaker
-- monitoração
+- Monitoração
 
         </script>
       </section>
@@ -251,7 +256,25 @@ gateway.get_json("/api/menu.json")
 
 <img src="static/circuit-breaker.png" style="background-color: #fff" />
 
+http://martinfowler.com/bliki/CircuitBreaker.html
+
 https://github.com/wsargent/circuit_breaker
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Monitoração
+
+- Falhas
+- Performance
+
+<br />
+
+<img src="static/newrelic.png" class="transparent" />
+
+<img src="static/sentry.png" />
 
         </script>
       </section>
@@ -273,7 +296,7 @@ https://github.com/rafaelbiriba/cap_blue_green_deploy
         <script type="text/template">
           ## Evolução da infra
 
-<img src="static/tsuru.svg" style="background-color: transparent" />
+<img src="static/tsuru.svg" class="transparent" />
 
 https://tsuru.io/
 

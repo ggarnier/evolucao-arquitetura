@@ -1,6 +1,6 @@
-## 2013/2014 - Globosat Play
+<img src="static/logo_globosatplay.png" class="transparent" />
 
-### Desafios
+## Desafios
 
 - manter a consistência entre os projetos
 - compartilhar APIs e componentes

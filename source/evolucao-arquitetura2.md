@@ -4,4 +4,4 @@
 
 - Cache
 - Circuit breaker
-- monitoração
+- Monitoração
