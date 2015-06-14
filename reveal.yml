@@ -16,8 +16,11 @@ slides:
 - globosat-play2
 - arquitetura-globosat-play1
 - arquitetura-globosat-play2
-- evolucao1
-- evolucao2
-- evolucao3
+- evolucao-arquitetura1
+- evolucao-arquitetura2
+- cache
+- circuit-breaker
+- evolucao-infra1
+- evolucao-infra2
 - vantagens1
 - desvantagens1

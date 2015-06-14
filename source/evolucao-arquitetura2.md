@@ -1,0 +1,7 @@
+## Evolução da arquitetura
+
+### Arquitetura resiliente
+
+- Cache
+- Circuit breaker
+- monitoração
