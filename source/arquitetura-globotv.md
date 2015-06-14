@@ -1,3 +1,3 @@
 ## arquitetura original
 
-<img src="static/globotv.svg" />
+<img src="static/monolith1.jpg" /> <!-- .element: class="fragment" data-fragment-index="1" -->

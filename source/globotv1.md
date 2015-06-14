@@ -1,6 +1,7 @@
-## 2011
+# 2011
 
-## Surgimento do Globo.tv
+# Globo.tv
 
 - produto de vídeos centralizado
-- Rede Globo e outros canais
+- Rede Globo e canais Globosat
+- trechos abertos e íntegras para assinantes

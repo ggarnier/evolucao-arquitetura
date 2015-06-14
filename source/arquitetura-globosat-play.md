@@ -1,3 +1,1 @@
-## Nova arquitetura
-
-<img src="static/globosat-play2.png" />
+<!-- .slide: data-background="static/globosat-play2.png" data-background-size="1000px"-->

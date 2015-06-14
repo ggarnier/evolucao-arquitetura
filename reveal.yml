@@ -3,10 +3,10 @@ order: manual
 slides:
 - capa
 - globotv1
+- globotv2
 - arquitetura-globotv
-- novas-demandas1
-- novas-demandas2
-- novas-demandas3
+- novas-demandas
+- arquitetura-globotv2
 - identidade-visual1
 - identidade-visual2
 - identidade-visual3
