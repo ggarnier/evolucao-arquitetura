@@ -2,6 +2,6 @@
 
 ### Desafios
 
-- manter a identidade visual entre os projetos
-- necessidade de compartilhamento de APIs e componentes
+- manter a consistência entre os projetos
+- compartilhar APIs e componentes
 - evoluir a plataforma para manter o Globo.TV e receber o Globosat Play

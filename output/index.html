@@ -20,6 +20,12 @@
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
+		<style media="screen">
+			.reveal section img {
+				border: 0;
+			}
+		</style>
+
 		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
 		<script>
 			if( window.location.search.match( /print-pdf/gi ) ) {
@@ -126,9 +132,9 @@
 
       <section data-markdown>
         <script type="text/template">
-          ## Criação de uma biblioteca de componentes
+          # globotv-ui
 
-### globotv-ui
+## Biblioteca de componentes
 
 - HTML, JS e CSS
 - Padronização
@@ -152,7 +158,10 @@
 
       <section data-markdown>
         <script type="text/template">
-          ## 2013/2014 - Globosat Play
+          # 2014
+
+<img src="static/logo_globosatplay.png" style="background-color: transparent" />
+<!-- img:  -->
 
 - Acervo dos canais Globosat
 - Transmissões ao vivo
@@ -168,8 +177,8 @@
 
 ### Desafios
 
-- manter a identidade visual entre os projetos
-- necessidade de compartilhamento de APIs e componentes
+- manter a consistência entre os projetos
+- compartilhar APIs e componentes
 - evoluir a plataforma para manter o Globo.TV e receber o Globosat Play
 
         </script>
@@ -191,22 +200,23 @@
 
       <section data-markdown>
         <script type="text/template">
-          ## Como evoluir a arquitetura?
+          ## Evolução da arquitetura
 
 - código de projetos antigos extraído para novos projetos
-- necessidade de documentação (APIs internas)
-- evolução no processo de deploy (blue-green)
-- evolução na infra (tsuru, dbaas)
+- documentação de APIs internas
 
         </script>
       </section>
 
       <section data-markdown>
         <script type="text/template">
-          ## Como evoluir a arquitetura?
+          ## Evolução da infra
 
-- necessidade de monitoração (desempenho e falhas)
-- new relic, google analytics, sentry
+### Blue-green deploy
+
+<img src="static/blue-green.png" />
+
+https://github.com/rafaelbiriba/cap_blue_green_deploy
 
         </script>
       </section>
