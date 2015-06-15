@@ -21,7 +21,9 @@ slides:
 - cache
 - circuit-breaker
 - monitoracao
-- evolucao-infra1
-- evolucao-infra2
+- evolucao-infra
+- blue-green
+- tsuru
+- dbaas
 - vantagens1
 - desvantagens1

@@ -1,5 +1,3 @@
-## Evolução da infra
-
 <img src="static/tsuru.svg" class="transparent" />
 
 https://tsuru.io/

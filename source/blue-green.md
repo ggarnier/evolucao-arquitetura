@@ -1,6 +1,4 @@
-## Evolução da infra
-
-### Blue-green deploy
+## Blue-green deploy
 
 <img src="static/blue-green.png" />
 
