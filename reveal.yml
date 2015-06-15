@@ -24,6 +24,8 @@ slides:
 - evolucao-infra
 - blue-green
 - tsuru
+- docker
 - dbaas
-- vantagens1
-- desvantagens1
+- comparacao
+- monolito
+- micro-servicos
