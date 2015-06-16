@@ -11,6 +11,7 @@
     <li>Arquitetura mais simples</li>
     <li>Setup local mais fácil</li>
     <li>Atualizações mais rápidas (gems, bugfixes)</li>
+    <li>Mais fácil de testar</li>
     <li>Ambiente homogêneo</li>
   </ul>
 </div>

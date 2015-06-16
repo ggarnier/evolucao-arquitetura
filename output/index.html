@@ -89,7 +89,7 @@
         <script type="text/template">
           ## arquitetura original
 
-<img src="static/monolith1.jpg" /> <!-- .element: class="fragment" data-fragment-index="1" -->
+<img src="static/monolith1.jpg" style="width: 900px" /> <!-- .element: class="fragment" data-fragment-index="1" -->
 
         </script>
       </section>
@@ -106,6 +106,13 @@
   - Campeonato Brasileiro e estaduais
   - Olimpíadas de inverno
 - Canal Combate (acervo de lutas)
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          <!-- .slide: data-background="static/breaking-rock.jpg" data-background-size="900px"-->
 
         </script>
       </section>
@@ -211,6 +218,8 @@
 
 - código de projetos antigos extraído para novos projetos
 - documentação de APIs internas
+- código comum compartilhado (gems internas)
+- versionamento de APIs
 
         </script>
       </section>
@@ -275,8 +284,7 @@ https://github.com/wsargent/circuit_breaker
 
 <br />
 
-<img src="static/newrelic.png" class="transparent" />
-
+<img src="static/newrelic.png" class="transparent" style="margin-right: 100px" />
 <img src="static/sentry.png" />
 
         </script>
@@ -286,7 +294,7 @@ https://github.com/wsargent/circuit_breaker
         <script type="text/template">
           ## Evolução da infra
 
-Cultura DevOps
+### Cultura DevOps
 
 - Blue-green deploy
 - Tsuru (PaaS)
@@ -348,7 +356,9 @@ docker run --name globosatplay -p 3010:3010 -v "$(pwd)":/app --link mongodb:mong
 
 https://github.com/globocom/database-as-a-service
 
-<img src="static/dbaas.png" />
+<img src="static/dbaas1.png" style="height: 210px" />
+
+<img src="static/dbaas2.png" style="height: 280px" />
 
         </script>
       </section>
@@ -378,6 +388,7 @@ https://github.com/globocom/database-as-a-service
     <li>Arquitetura mais simples</li>
     <li>Setup local mais fácil</li>
     <li>Atualizações mais rápidas (gems, bugfixes)</li>
+    <li>Mais fácil de testar</li>
     <li>Ambiente homogêneo</li>
   </ul>
 </div>

@@ -1,6 +1,6 @@
 ## Evolução da infra
 
-Cultura DevOps
+### Cultura DevOps
 
 - Blue-green deploy
 - Tsuru (PaaS)
