@@ -22,6 +22,7 @@ slides:
 - cache
 - circuit-breaker
 - monitoracao
+- escalabilidade
 - evolucao-infra
 - blue-green
 - tsuru

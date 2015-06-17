@@ -5,3 +5,4 @@
 - Cache
 - Circuit breaker
 - Monitoração
+- Escalabilidade
