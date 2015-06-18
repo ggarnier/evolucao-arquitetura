@@ -82,6 +82,13 @@
 
       <section data-markdown>
         <script type="text/template">
+          <!-- .slide: data-background-image="static/globocom.png" data-background-size="700px" data-background-color="#fff" -->
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
           # 2011
 
 # Globo.tv
@@ -134,7 +141,7 @@
 
       <section data-markdown>
         <script type="text/template">
-          <!-- .slide: data-background="static/arquitetura-globotv2.svg" data-background-size="700px"-->
+          <!-- .slide: data-background-image="static/arquitetura-globotv2.svg" data-background-size="700px" data-background-color="#fff" -->
 
         </script>
       </section>
@@ -175,7 +182,9 @@
 
       <section data-markdown>
         <script type="text/template">
-          ## Componentes do globotv-ui
+          <!-- .slide: data-background="#0562dc" -->
+
+## Componentes do globotv-ui
 
 <img src="static/componente-thumb.png" />
 <img src="static/componente-menu.png" />
@@ -215,14 +224,14 @@
 
       <section data-markdown>
         <script type="text/template">
-          <!-- .slide: data-background="static/arquitetura-globosatplay.svg" data-background-size="1000px"-->
+          <!-- .slide: data-background-image="static/arquitetura-globosatplay.svg" data-background-size="1000px" data-background-color="#fff" -->
 
         </script>
       </section>
 
       <section data-markdown>
         <script type="text/template">
-          <!-- .slide: data-background="static/globosat-play2.png" data-background-size="1000px"-->
+          <!-- .slide: data-background-image="static/globosat-play2.png" data-background-size="1000px" data-background-color="#fff" -->
 
         </script>
       </section>
@@ -308,7 +317,11 @@ https://github.com/wsargent/circuit_breaker
 
       <section data-markdown>
         <script type="text/template">
-          <!-- .slide: data-background-image="static/escalabilidade.png" data-background-size="700px" data-background-color="#fff" -->
+          <!-- .slide: data-background-color="#fff" -->
+
+<h2 style="color: #000">Escalabilidade</h2>
+
+<img src="static/escalabilidade.png" class="transparent" />
 
         </script>
       </section>
@@ -365,9 +378,10 @@ https://www.docker.com/
 - Um container por processo
 
 ```bash
-docker run --name redis -p 6379:6379 -d redis
-docker run --name mongodb -p 27017:27017 -v $HOME/data/mongo:/data -d mongo:2.4 mongod --smallfiles
-docker run --name globosatplay -p 3010:3010 -v "$(pwd)":/app --link mongodb:mongodb --link redis:redis globosatplay
+docker run --name redis -d redis
+docker run --name mongodb -d mongo:2.4 mongod
+docker run --name globosatplay -p 3010:3010 -v "$(pwd)":/app \
+    --link mongodb:mongodb --link redis:redis globosatplay
 ```
 
         </script>
@@ -450,6 +464,29 @@ https://github.com/globocom/database-as-a-service
 <img src="static/lego.png" class="transparent" width="450px" style="margin-left: 20px" />
 
 ## Depende! <!-- .element: class="fragment" data-fragment-index="1" -->
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Referências
+
+<img src="static/building-microservices-book.jpg" style="height:500px" />
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Referências
+
+- http://www.infoq.com/br/presentations/evoluindo-uma-arquitetura-soundcloud
+- https://developers.soundcloud.com/blog/building-products-at-soundcloud-part-1-dealing-with-the-monolith
+- http://labs.spotify.com/2014/03/27/spotify-engineering-culture-part-1/
+- https://sudo.hailoapp.com/web/2014/12/08/webapps-as-microservices/
+- http://www.ustream.tv/recorded/61479577
+- http://qconsp.com/system/files/presentation-slides/QConSP2015-MonolithToMicroServices.pdf
 
         </script>
       </section>

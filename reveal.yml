@@ -3,6 +3,7 @@ order: manual
 slides:
 - capa
 - apresentacao
+- globocom
 - globotv1
 - globotv2
 - arquitetura-globotv
@@ -33,4 +34,6 @@ slides:
 - monolito
 - micro-servicos
 - conclusao
+- referencias1
+- referencias2
 - fim

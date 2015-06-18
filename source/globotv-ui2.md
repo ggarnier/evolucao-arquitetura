@@ -1,3 +1,5 @@
+<!-- .slide: data-background="#0562dc" -->
+
 ## Componentes do globotv-ui
 
 <img src="static/componente-thumb.png" />
