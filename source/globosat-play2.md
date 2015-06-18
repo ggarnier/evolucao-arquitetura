@@ -1,4 +1,4 @@
-<img src="static/logo_globosatplay.png" class="transparent" />
+<img src="static/logo_globosatplay.png" />
 
 ## Desafios
 

@@ -1,5 +1,5 @@
 <div class='span4'>
-  <img src="static/monolith2.png" class="transparent" width="300px" />
+  <img src="static/monolith2.png" width="300px" />
 </div>
 
 <div class='span1'></div>

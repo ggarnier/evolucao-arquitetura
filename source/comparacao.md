@@ -1,4 +1,4 @@
 ## Monolito x Micro serviços
 
-<img src="static/monolith2.png" class="transparent" width="300px" />
-<img src="static/lego.png" class="transparent" width="600px" style="margin-left: 20px" />
+<img src="static/monolith2.png" width="300px" />
+<img src="static/lego.png" width="600px" style="margin-left: 20px" />

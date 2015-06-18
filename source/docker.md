@@ -1,4 +1,4 @@
-<img src="static/docker.png" />
+<img src="static/docker.png" style="width: 600px" />
 
 https://www.docker.com/
 

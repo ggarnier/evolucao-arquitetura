@@ -1,4 +1,4 @@
-<img src="static/tsuru.svg" class="transparent" />
+<img src="static/tsuru.svg" />
 
 https://tsuru.io/
 
