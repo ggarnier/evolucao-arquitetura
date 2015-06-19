@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>A evolução de uma arquitetura distribuída: do Globo.tv ao Globosat Play</title>
+
+		<meta name="description" content="A evolução de uma arquitetura distribuída: do Globo.tv ao Globosat Play">
+		<meta name="author" content="Guilherme Garnier">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- bootstrap for columns -->
+		<link rel="stylesheet" href="http://slidifylibraries2.googlecode.com/git/inst/libraries/widgets/bootstrap/css/bootstrap.css">
+
+		<style media="screen">
+			.reveal section img {
+				border: 0;
+				background-color: transparent;
+				box-shadow: none;
+			}
+		</style>
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<img src="https://ga-beacon.appspot.com/UA-25495907-3/gh-pages/evolucao-arquitetura?pixel">
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				      <section data-markdown>
+        <script type="text/template">
+          # A evolução de uma arquitetura distribuída
+
+<br />
+
+## Guilherme Garnier
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          <img src="static/eu.jpg" width="400px" />
+
+<img src="static/twitter.svg" style="width: 40px; margin: 0 15px" />
+[@guilhermgarnier](https://twitter.com/guilhermgarnier/)
+
+<img src="static/github.png" style="width: 40px; margin: 0 15px -5px" />
+[@ggarnier](https://github.com/ggarnier/)
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          <!-- .slide: data-background-image="static/globocom.png" data-background-size="700px" data-background-color="#fff" -->
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          # 2011
+
+# Globo.tv
+
+- produto de vídeos centralizado
+- Rede Globo e canais Globosat
+- trechos abertos e íntegras para assinantes
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          <!-- .slide: data-background="static/globotv.png" data-background-size="1000px"-->
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## arquitetura original
+
+<img src="static/monolith1.jpg" style="width: 900px" /> <!-- .element: class="fragment" data-fragment-index="1" -->
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          # 2012
+
+## novas demandas
+
+- Transmissões ao vivo
+  - Big Brother
+  - UFC
+  - Campeonato Brasileiro e estaduais
+  - Olimpíadas de inverno
+- Canal Combate (acervo de lutas)
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          <!-- .slide: data-background="static/breaking-rock.jpg" data-background-size="900px"-->
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          <!-- .slide: data-background-image="static/arquitetura-globotv2.svg" data-background-size="700px" data-background-color="#fff" -->
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          # como manter a identidade visual entre os projetos?
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          <img src="static/globotv-video.png" />
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          <img src="static/globotv-busca.png" />
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          # globotv-ui
+
+## Biblioteca de componentes
+
+- HTML, JS e CSS
+- Padronização
+- Documentação
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          <!-- .slide: data-background="#0562dc" -->
+
+## Componentes do globotv-ui
+
+<img src="static/componente-thumb.png" />
+<img src="static/componente-menu.png" />
+<img src="static/componente-paginacao.png" />
+<img src="static/componente-titulo.png" />
+<img src="static/componente-trilho.png" />
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          # 2014
+
+<img src="static/logo_globosatplay.png" />
+
+- Acervo dos canais Globosat
+- Transmissões ao vivo
+- Filmes
+- Lutas
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          <img src="static/logo_globosatplay.png" />
+
+## Desafios
+
+- manter a consistência entre os projetos
+- compartilhar APIs e componentes
+- evoluir a plataforma para manter o Globo.TV e receber o Globosat Play
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          <!-- .slide: data-background-image="static/arquitetura-globosatplay.svg" data-background-size="1000px" data-background-color="#fff" -->
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          <!-- .slide: data-background-image="static/globosat-play.png" data-background-size="1000px" data-background-color="#fff" -->
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Evolução da arquitetura
+
+- código de projetos antigos extraído para novos projetos
+- documentação de APIs internas
+- código comum compartilhado (gems internas)
+- versionamento de APIs
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Evolução da arquitetura
+
+### Arquitetura resiliente
+
+- Cache
+- Circuit breaker
+- Monitoração
+- Escalabilidade
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Cache
+
+- 2 níveis (performance e stale)
+- diferentes tempos para cada serviço
+
+https://github.com/globocom/content-gateway-ruby
+
+```ruby
+menu_config = OpenStruct.new(
+  cache: Rails.cache,
+  timeout: 1,
+  cache_expires_in: 30.minutes,
+  cache_stale_expires_in: 2.days
+)
+
+gateway = ContentGateway::Gateway.new("Menu", menu_config, UrlGenerator.new)
+
+gateway.get_json("/api/menu.json")
+```
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Circuit breaker
+
+<img src="static/circuit-breaker.png" style="background-color: #fff" />
+
+http://martinfowler.com/bliki/CircuitBreaker.html
+
+https://github.com/wsargent/circuit_breaker
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Monitoração
+
+- Falhas
+- Performance
+
+<br />
+
+<img src="static/newrelic.png" style="margin-right: 100px" />
+<img src="static/sentry.png" />
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          <!-- .slide: data-background-color="#fff" -->
+
+<h2 style="color: #000">Escalabilidade</h2>
+
+<img src="static/escalabilidade.png" />
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Evolução da infra
+
+### Cultura DevOps
+
+- Blue-green deploy
+- Tsuru (PaaS)
+- Docker
+- Database as a service
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Blue-green deploy
+
+<img src="static/blue-green.png" />
+
+https://github.com/rafaelbiriba/cap_blue_green_deploy
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          <img src="static/tsuru.svg" />
+
+https://tsuru.io/
+
+PaaS open source da Globo.com
+
+```bash
+tsuru app-create myapp
+git remote add tsuru git@example.com:myapp.git
+git push tsuru master
+```
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          <img src="static/docker.png" style="width: 600px" />
+
+https://www.docker.com/
+
+- Setup do ambiente local muito mais simples
+- Um container por processo
+
+```bash
+docker run --name redis -d redis
+docker run --name mongodb -d mongo:2.4 mongod
+docker run --name globosatplay -p 3010:3010 -v "$(pwd)":/app \
+    --link mongodb:mongodb --link redis:redis globosatplay
+```
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Database as a service
+
+https://github.com/globocom/database-as-a-service
+
+<img src="static/dbaas1.png" style="height: 210px" />
+
+<img src="static/dbaas2.png" style="height: 280px" />
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Monolito x Micro serviços
+
+<img src="static/monolith2.png" width="300px" />
+<img src="static/lego.png" width="600px" style="margin-left: 20px" />
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          <div class='span4'>
+  <img src="static/monolith2.png" width="300px" />
+</div>
+
+<div class='span1'></div>
+
+<div class='span7'>
+  <h2>Arquitetura monolítica</h2>
+  <br />
+  <ul>
+    <li>Arquitetura mais simples</li>
+    <li>Setup local mais fácil</li>
+    <li>Atualizações mais rápidas (gems, bugfixes)</li>
+    <li>Mais fácil de testar</li>
+    <li>Ambiente homogêneo</li>
+  </ul>
+</div>
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          <div class='span4'>
+  <img src="static/lego.png" width="600px" />
+</div>
+
+<div class='span1'></div>
+
+<div class='span7'>
+  <h2>Micro serviços</h2>
+  <br />
+  <ul>
+    <li>Projetos menores e mais fáceis de gerenciar</li>
+    <li>Build mais rápido</li>
+    <li>Deploys menores e menos arriscados</li>
+    <li>Infra mais flexível</li>
+    <li>Permite mudanças incrementais</li>
+  </ul>
+</div>
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Qual a melhor arquitetura?
+
+<img src="static/monolith2.png" width="225px" />
+<img src="static/lego.png" width="450px" style="margin-left: 20px" />
+
+## Depende! <!-- .element: class="fragment" data-fragment-index="1" -->
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Referências
+
+<img src="static/building-microservices-book.jpg" style="height:500px" />
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Referências
+
+- http://www.infoq.com/br/presentations/evoluindo-uma-arquitetura-soundcloud
+- https://developers.soundcloud.com/blog/building-products-at-soundcloud-part-1-dealing-with-the-monolith
+- http://labs.spotify.com/2014/03/27/spotify-engineering-culture-part-1/
+- https://sudo.hailoapp.com/web/2014/12/08/webapps-as-microservices/
+- http://www.ustream.tv/recorded/61479577
+- http://qconsp.com/system/files/presentation-slides/QConSP2015-MonolithToMicroServices.pdf
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          # Obrigado!
+
+<br />
+
+<img src="static/twitter.svg" style="width: 40px; margin: 0 15px" />
+[@guilhermgarnier](https://twitter.com/guilhermgarnier/)
+
+<img src="static/github.png" style="width: 40px; margin: 0 15px -5px" />
+[@ggarnier](https://github.com/ggarnier/)
+
+        </script>
+      </section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
