@@ -4,20 +4,20 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>A evolução de uma arquitetura distribuída: do Globo.tv ao Globosat Play</title>
+		<title>A evolução de uma arquitetura distribuída</title>
 
-		<meta name="description" content="A evolução de uma arquitetura distribuída: do Globo.tv ao Globosat Play">
+		<meta name="description" content="A evolução de uma arquitetura distribuída">
 		<meta name="author" content="Guilherme Garnier">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/league.css" id="theme">
 
-		<!-- For syntax highlighting -->
+		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
 		<!-- bootstrap for columns -->
@@ -31,15 +31,13 @@
 			}
 		</style>
 
-		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<!-- Printing and PDF exports -->
 		<script>
-			if( window.location.search.match( /print-pdf/gi ) ) {
-				var link = document.createElement( 'link' );
-				link.rel = 'stylesheet';
-				link.type = 'text/css';
-				link.href = 'css/print/pdf.css';
-				document.getElementsByTagName( 'head' )[0].appendChild( link );
-			}
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 
 		<!--[if lt IE 9]>
@@ -68,11 +66,10 @@
         <script type="text/template">
           <img src="static/eu.jpg" width="400px" />
 
+http://blog.guilhermegarnier.com
+
 <img src="static/twitter.svg" style="width: 40px; margin: 0 15px" />
 [@guilhermgarnier](https://twitter.com/guilhermgarnier/)
-
-<img src="static/github.png" style="width: 40px; margin: 0 15px -5px" />
-[/ggarnier](https://github.com/ggarnier/)
 
         </script>
       </section>
@@ -80,6 +77,23 @@
       <section data-markdown>
         <script type="text/template">
           <!-- .slide: data-background-image="static/globocom.png" data-background-size="700px" data-background-color="#fff" -->
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          <!-- .slide: data-background="#fff" -->
+
+<img src="static/globocom.png" style="height: 150px" />
+
+<br />
+
+<h2 style="color: black">Plataforma de vídeos</h2>
+
+<p style="color: black"><b>1.3 M</b> vídeos publicados</p>
+
+<p style="color: black"><b>500 M</b> videoviews/mês</p>
 
         </script>
       </section>
@@ -108,7 +122,7 @@
         <script type="text/template">
           ## arquitetura original
 
-<img src="static/monolith1.jpg" style="width: 900px" /> <!-- .element: class="fragment" data-fragment-index="1" -->
+<img src="static/monolith1.jpg" style="width: 800px" /> <!-- .element: class="fragment" data-fragment-index="1" -->
 
         </script>
       </section>
@@ -131,7 +145,7 @@
 
       <section data-markdown>
         <script type="text/template">
-          <!-- .slide: data-background="static/breaking-rock.jpg" data-background-size="900px"-->
+          <!-- .slide: data-background-image="static/breaking-rock.jpg" data-background-size="800px" data-background-color="#fff" -->
 
         </script>
       </section>
@@ -390,9 +404,9 @@ docker run --name globosatplay -p 3010:3010 -v "$(pwd)":/app \
 
 https://github.com/globocom/database-as-a-service
 
-<img src="static/dbaas1.png" style="height: 210px" />
+<img src="static/dbaas1.png" style="height: 180px" />
 
-<img src="static/dbaas2.png" style="height: 280px" />
+<img src="static/dbaas2.png" style="height: 250px" />
 
         </script>
       </section>
@@ -494,11 +508,10 @@ https://github.com/globocom/database-as-a-service
 
 <br />
 
+http://blog.guilhermegarnier.com
+
 <img src="static/twitter.svg" style="width: 40px; margin: 0 15px" />
 [@guilhermgarnier](https://twitter.com/guilhermgarnier/)
-
-<img src="static/github.png" style="width: 40px; margin: 0 15px -5px" />
-[/ggarnier](https://github.com/ggarnier/)
 
 Slides: http://ggarnier.github.io/evolucao-arquitetura/
 
@@ -511,11 +524,11 @@ Slides: http://ggarnier.github.io/evolucao-arquitetura/
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+		<script src="js/reveal.js"></script>
 
 		<script>
 
-			// Full list of configuration options available here:
+			// Full list of configuration options available at:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				controls: false,
@@ -523,21 +536,16 @@ Slides: http://ggarnier.github.io/evolucao-arquitetura/
 				history: true,
 				center: true,
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
-
-				// Optional libraries used to extend on reveal.js
+				// Optional reveal.js plugins
 				dependencies: [
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
 					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
 				]
 			});
 
