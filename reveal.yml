@@ -22,7 +22,8 @@ slides:
 - arquitetura-globosat-play2
 - evolucao-arquitetura1
 - evolucao-arquitetura2
-- cache
+- cache1
+- cache2
 - circuit-breaker
 - monitoracao
 - escalabilidade
