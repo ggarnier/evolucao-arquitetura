@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/league.css" id="theme">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -28,6 +28,10 @@
 				border: 0;
 				background-color: transparent;
 				box-shadow: none;
+			}
+
+			.reveal li {
+				word-break: break-word;
 			}
 		</style>
 
@@ -53,7 +57,9 @@
 			<div class="slides">
 				      <section data-markdown>
         <script type="text/template">
-          # A evolução de uma arquitetura distribuída
+          # A evolução de uma arquitetura distribuída:
+
+# do Globo.tv ao Globosat Play
 
 <br />
 
@@ -76,7 +82,13 @@ http://blog.guilhermegarnier.com
 
       <section data-markdown>
         <script type="text/template">
-          <!-- .slide: data-background-image="static/globocom.png" data-background-size="700px" data-background-color="#fff" -->
+          <!-- .slide: data-background="#fff" -->
+
+<img src="static/globocom.png" style="height: 300px" />
+
+Estamos contratando! <!-- .element: class="fragment" data-fragment-index="1" -->
+
+http://talentos.globo.com <!-- .element: class="fragment" data-fragment-index="1" -->
 
         </script>
       </section>
@@ -91,9 +103,9 @@ http://blog.guilhermegarnier.com
 
 <h2 style="color: black">Plataforma de vídeos</h2>
 
-<p style="color: black"><b>1.3 M</b> vídeos publicados</p>
+<p style="color: black"><b style="font-size: 150%">2 M </b> vídeos publicados</p>
 
-<p style="color: black"><b>500 M</b> videoviews/mês</p>
+<p style="color: black"><b style="font-size: 150%">500 M </b> videoviews/mês</p>
 
         </script>
       </section>
@@ -265,6 +277,18 @@ http://blog.guilhermegarnier.com
 
 ### Arquitetura resiliente
 
+- Fazer o máximo para manter o site no ar
+- Foco nas principais features ("graceful degradation")
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Evolução da arquitetura
+
+### Arquitetura resiliente
+
 - Cache
 - Circuit breaker
 - Monitoração
@@ -294,6 +318,13 @@ gateway = ContentGateway::Gateway.new("Menu", menu_config, UrlGenerator.new)
 
 gateway.get_json("/api/menu.json")
 ```
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          <!-- .slide: data-background="static/cache.png" data-background-size="700px" data-background-color="#fff"-->
 
         </script>
       </section>
@@ -381,12 +412,22 @@ git push tsuru master
 
       <section data-markdown>
         <script type="text/template">
+          <!-- .slide: data-background="#fff" -->
+
+<img src="static/docker.png" style="width: 600px" />
+
+<img src="static/docker-containers.png" />
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
           <img src="static/docker.png" style="width: 600px" />
 
-https://www.docker.com/
-
 - Setup do ambiente local muito mais simples
-- Um container por processo
+- Garante um ambiente igual para qualquer máquina
+- Isolamento de containers
 
 ```bash
 docker run --name redis -d redis
@@ -438,6 +479,7 @@ https://github.com/globocom/database-as-a-service
     <li>Atualizações mais rápidas (gems, bugfixes)</li>
     <li>Mais fácil de testar</li>
     <li>Ambiente homogêneo</li>
+    <li>Menos pontos de falha</li>
   </ul>
 </div>
 
@@ -492,12 +534,11 @@ https://github.com/globocom/database-as-a-service
         <script type="text/template">
           ## Referências
 
-- http://www.infoq.com/br/presentations/evoluindo-uma-arquitetura-soundcloud
-- https://developers.soundcloud.com/blog/building-products-at-soundcloud-part-1-dealing-with-the-monolith
+- http://philcalcado.com/2015/09/08/how_we_ended_up_with_microservices.html
 - http://labs.spotify.com/2014/03/27/spotify-engineering-culture-part-1/
 - https://sudo.hailoapp.com/web/2014/12/08/webapps-as-microservices/
 - http://www.ustream.tv/recorded/61479577
-- http://qconsp.com/system/files/presentation-slides/QConSP2015-MonolithToMicroServices.pdf
+- http://qconsp.com/sp2015/system/files/presentation-slides/QConSP2015-MonolithToMicroServices.pdf
 
         </script>
       </section>
@@ -513,7 +554,7 @@ http://blog.guilhermegarnier.com
 <img src="static/twitter.svg" style="width: 40px; margin: 0 15px" />
 [@guilhermgarnier](https://twitter.com/guilhermgarnier/)
 
-Slides: http://ggarnier.github.io/evolucao-arquitetura/
+Slides: http://blog.guilhermegarnier.com/evolucao-arquitetura/
 
         </script>
       </section>
@@ -531,6 +572,8 @@ Slides: http://ggarnier.github.io/evolucao-arquitetura/
 			// Full list of configuration options available at:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
+				width: 1024,
+				height: 768,
 				controls: false,
 				progress: true,
 				history: true,
