@@ -31,7 +31,8 @@ slides:
 - evolucao-infra
 - blue-green
 - tsuru
-- docker
+- docker1
+- docker2
 - dbaas
 - comparacao
 - monolito

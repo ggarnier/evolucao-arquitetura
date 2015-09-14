@@ -402,12 +402,22 @@ git push tsuru master
 
       <section data-markdown>
         <script type="text/template">
+          <!-- .slide: data-background="#fff" -->
+
+<img src="static/docker.png" style="width: 600px" />
+
+<img src="static/docker-containers.png" />
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
           <img src="static/docker.png" style="width: 600px" />
 
-https://www.docker.com/
-
 - Setup do ambiente local muito mais simples
-- Um container por processo
+- Garante um ambiente igual para qualquer máquina
+- Isolamento de containers
 
 ```bash
 docker run --name redis -d redis
@@ -459,6 +469,7 @@ https://github.com/globocom/database-as-a-service
     <li>Atualizações mais rápidas (gems, bugfixes)</li>
     <li>Mais fácil de testar</li>
     <li>Ambiente homogêneo</li>
+    <li>Menos pontos de falha</li>
   </ul>
 </div>
 

@@ -13,5 +13,6 @@
     <li>Atualizações mais rápidas (gems, bugfixes)</li>
     <li>Mais fácil de testar</li>
     <li>Ambiente homogêneo</li>
+    <li>Menos pontos de falha</li>
   </ul>
 </div>

@@ -1,9 +1,8 @@
 <img src="static/docker.png" style="width: 600px" />
 
-https://www.docker.com/
-
 - Setup do ambiente local muito mais simples
-- Um container por processo
+- Garante um ambiente igual para qualquer máquina
+- Isolamento de containers
 
 ```bash
 docker run --name redis -d redis
