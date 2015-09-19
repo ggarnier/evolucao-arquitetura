@@ -56,12 +56,14 @@
           <h1>
   A evolução de uma arquitetura distribuída:
   <br />
-  do <span style="font-style: italic; color: #87b169">Globo.tv</span> ao <span style="font-style: italic; color: #4576a1">Globosat Play</span>
+  do <span style="font-style: italic; color: #87b169">Globo.tv</span>
+  <br />
+  ao <span style="font-style: italic; color: #4576a1">Globosat Play</span>
 </h1>
 
 <br />
 
-<h2 style="font-family: serif">Guilherme Garnier</h2>
+<p style="font-size: 200%">Guilherme Garnier</p>
 
 <pre style="display: none"><code></code></pre>
 
@@ -332,7 +334,16 @@ gateway.get_json("/api/menu.json")
           <script type="text/template">
             ## Circuit breaker
 
-<img src="static/circuit-breaker.png" style="background-color: #fff" />
+<img src="static/circuit-breaker.jpg" style="height: 500px; background-color: #fff" />
+
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            ## Circuit breaker
+
+<img src="static/circuit-breaker-state-machine.png" style="background-color: #fff" />
 
 http://martinfowler.com/bliki/CircuitBreaker.html
 
@@ -520,9 +531,11 @@ https://github.com/globocom/database-as-a-service
           <script type="text/template">
             ## Referências
 
-<img src="static/building-microservices-book.jpg" style="height:500px; float: left" />
+<div style="width: 1000px; margin: 0 auto">
+  <img src="static/building-microservices-book.jpg" style="height:500px; float: left" />
 
-<img src="static/release-it-book.jpg" style="height:500px; float: right" />
+  <img src="static/release-it-book.jpg" style="height:500px; float: right" />
+</div>
 
           </script>
         </section>
@@ -569,8 +582,9 @@ Slides: http://blog.guilhermegarnier.com/evolucao-arquitetura/
 			// Full list of configuration options available at:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				width: 1024,
-				height: 768,
+				width: 1280,
+				height: 800,
+				margin: 0.1,
 				controls: false,
 				progress: true,
 				history: true,
