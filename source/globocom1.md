@@ -2,6 +2,6 @@
 
 <img src="static/globocom.png" style="height: 300px" />
 
-Estamos contratando! <!-- .element: class="fragment" data-fragment-index="1" -->
+<p style="font-size: 150%">Estamos contratando!</p> <!-- .element: class="fragment" data-fragment-index="1" -->
 
 http://talentos.globo.com <!-- .element: class="fragment" data-fragment-index="1" -->

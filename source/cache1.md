@@ -13,7 +13,7 @@ menu_config = OpenStruct.new(
   cache_stale_expires_in: 2.days
 )
 
-gateway = ContentGateway::Gateway.new("Menu", menu_config, UrlGenerator.new)
+gateway = ContentGateway::Gateway.new("Menu", menu_config)
 
 gateway.get_json("/api/menu.json")
 ```
