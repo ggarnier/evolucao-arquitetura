@@ -25,7 +25,8 @@ slides:
 - evolucao-arquitetura3
 - cache1
 - cache2
-- circuit-breaker
+- circuit-breaker1
+- circuit-breaker2
 - monitoracao
 - escalabilidade
 - evolucao-infra
