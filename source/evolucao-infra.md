@@ -3,6 +3,6 @@
 ### Cultura DevOps
 
 - Blue-green deploy
-- Tsuru (PaaS)
 - Docker
+- Tsuru (PaaS)
 - Database as a service

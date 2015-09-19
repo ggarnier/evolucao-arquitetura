@@ -30,9 +30,9 @@ slides:
 - escalabilidade
 - evolucao-infra
 - blue-green
-- tsuru
 - docker1
 - docker2
+- tsuru
 - dbaas
 - comparacao
 - monolito

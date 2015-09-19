@@ -374,8 +374,8 @@ https://github.com/wsargent/circuit_breaker
 ### Cultura DevOps
 
 - Blue-green deploy
-- Tsuru (PaaS)
 - Docker
+- Tsuru (PaaS)
 - Database as a service
 
         </script>
@@ -388,23 +388,6 @@ https://github.com/wsargent/circuit_breaker
 <img src="static/blue-green.png" />
 
 https://github.com/rafaelbiriba/cap_blue_green_deploy
-
-        </script>
-      </section>
-
-      <section data-markdown>
-        <script type="text/template">
-          <img src="static/tsuru.svg" />
-
-https://tsuru.io/
-
-PaaS open source da Globo.com
-
-```bash
-tsuru app-create myapp
-git remote add tsuru git@example.com:myapp.git
-git push tsuru master
-```
 
         </script>
       </section>
@@ -433,6 +416,23 @@ docker run --name redis -d redis
 docker run --name mongodb -d mongo:2.4 mongod
 docker run --name globosatplay -p 3010:3010 -v "$(pwd)":/app \
     --link mongodb:mongodb --link redis:redis globosatplay
+```
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          <img src="static/tsuru.svg" />
+
+https://tsuru.io/
+
+PaaS open source da Globo.com
+
+```bash
+tsuru app-create myapp
+git remote add tsuru git@example.com:myapp.git
+git push tsuru master
 ```
 
         </script>
