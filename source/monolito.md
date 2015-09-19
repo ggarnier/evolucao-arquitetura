@@ -1,10 +1,8 @@
-<div class='span4'>
+<div style="float: left; width: 30%">
   <img src="static/monolith2.png" width="300px" />
 </div>
 
-<div class='span1'></div>
-
-<div class='span7'>
+<div style="float: right; width: 70%">
   <h2>Arquitetura monolítica</h2>
   <br />
   <ul>

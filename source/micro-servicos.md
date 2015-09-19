@@ -1,10 +1,8 @@
-<div class='span4'>
+<div style="float: left; width: 30%">
   <img src="static/lego.png" width="600px" />
 </div>
 
-<div class='span1'></div>
-
-<div class='span7'>
+<div style="float: right; width: 70%">
   <h2>Micro serviços</h2>
   <br />
   <ul>
