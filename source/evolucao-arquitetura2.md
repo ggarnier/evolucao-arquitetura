@@ -2,5 +2,7 @@
 
 ### Arquitetura resiliente
 
-- Fazer o máximo para manter o site no ar
-- Foco nas principais features ("graceful degradation")
+- Cache
+- Circuit breaker
+- Monitoração
+- Escalabilidade

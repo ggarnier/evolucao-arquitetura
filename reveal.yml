@@ -3,8 +3,7 @@ order: manual
 slides:
 - capa.html
 - apresentacao
-- globocom1
-- globocom2
+- globocom
 - globotv1
 - globotv2
 - arquitetura-globotv
@@ -16,13 +15,11 @@ slides:
 - identidade-visual3
 - globotv-ui1
 - globotv-ui2
-- globosat-play1
-- globosat-play2
+- globosat-play
 - arquitetura-globosat-play1
 - arquitetura-globosat-play2
 - evolucao-arquitetura1
 - evolucao-arquitetura2
-- evolucao-arquitetura3
 - cache1
 - cache2
 - circuit-breaker1
