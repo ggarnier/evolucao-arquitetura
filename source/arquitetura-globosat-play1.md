@@ -1,1 +1,2 @@
-<!-- .slide: data-background-image="static/arquitetura-globosatplay.svg" data-background-size="1000px" data-background-color="#fff" -->
+<!-- .slide: data-background-color="#fff" -->
+<img src="static/arquitetura-globosatplay.svg" style="width: 1000px" />

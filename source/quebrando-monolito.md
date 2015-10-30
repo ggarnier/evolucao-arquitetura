@@ -1,1 +1,2 @@
-<!-- .slide: data-background-image="static/breaking-rock.jpg" data-background-size="800px" data-background-color="#fff" -->
+<!-- .slide: data-background-color="#fff" -->
+<img src="static/breaking-rock.jpg" style="width: 800px" />

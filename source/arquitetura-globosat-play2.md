@@ -1,1 +1,2 @@
-<!-- .slide: data-background-image="static/globosat-play.png" data-background-size="900px" data-background-color="#fff" -->
+<!-- .slide: data-background-color="#fff" -->
+<img src="static/globosat-play.png" style="width: 900px" />
