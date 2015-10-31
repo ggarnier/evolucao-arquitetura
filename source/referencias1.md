@@ -5,3 +5,5 @@
 
   <img src="static/release-it-book.jpg" style="height:500px; float: right" />
 </div>
+
+<hr class="pdf-bugfix" />

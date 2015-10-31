@@ -13,3 +13,5 @@
     <li>Permite mudanças incrementais</li>
   </ul>
 </div>
+
+<hr class="pdf-bugfix" />

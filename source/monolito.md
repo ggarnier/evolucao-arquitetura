@@ -14,3 +14,5 @@
     <li>Menos pontos de falha</li>
   </ul>
 </div>
+
+<hr class="pdf-bugfix" />
