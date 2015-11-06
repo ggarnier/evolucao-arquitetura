@@ -56,23 +56,24 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
-					<h1>
-					  A evolução de uma arquitetura distribuída:
-					  <br />
-					  do <span style="font-style: italic; color: #87b169">Globo.tv</span>
-					  <br />
-					  ao <span style="font-style: italic; color: #4576a1">Globosat Play</span>
-					</h1>
-
-					<br />
-
-					<p style="font-size: 200%">Guilherme Garnier</p>
-
-					<pre style="display: none"><code></code></pre>
-
-				</section>
 				      <section data-markdown>
+        <script type="text/template">
+          <h1>
+  A evolução de uma arquitetura distribuída:
+  <br />
+  do <span style="font-style: italic; color: #87b169">Globo.tv</span>
+  <br />
+  ao <span style="font-style: italic; color: #4576a1">Globosat Play</span>
+</h1>
+
+<br />
+
+<p style="font-size: 200%">Guilherme Garnier</p>
+
+        </script>
+      </section>
+
+      <section data-markdown>
         <script type="text/template">
           <img src="static/eu.jpg" width="400px" />
 
@@ -162,7 +163,7 @@ http://talentos.globo.com <!-- .element: class="fragment" data-fragment-index="1
       <section data-markdown>
         <script type="text/template">
           <!-- .slide: data-background-color="#fff" -->
-          <img src="static/breaking-rock.jpg" style="width: 900px; margin: 0" />
+<img src="static/breaking-rock.jpg" style="width: 900px; margin: 0" />
 
         </script>
       </section>
@@ -170,7 +171,7 @@ http://talentos.globo.com <!-- .element: class="fragment" data-fragment-index="1
       <section data-markdown>
         <script type="text/template">
           <!-- .slide: data-background-color="#fff" -->
-          <img src="static/arquitetura-globotv2.svg" style="width: 900px; margin: 0" />
+<img src="static/arquitetura-globotv2.svg" style="width: 900px; margin: 0" />
 
         </script>
       </section>
@@ -254,7 +255,7 @@ http://talentos.globo.com <!-- .element: class="fragment" data-fragment-index="1
       <section data-markdown>
         <script type="text/template">
           <!-- .slide: data-background-color="#fff" -->
-          <img src="static/arquitetura-globosatplay.svg" style="width: 1200px; margin: 0" />
+<img src="static/arquitetura-globosatplay.svg" style="width: 1200px; margin: 0" />
 
         </script>
       </section>
@@ -262,7 +263,7 @@ http://talentos.globo.com <!-- .element: class="fragment" data-fragment-index="1
       <section data-markdown>
         <script type="text/template">
           <!-- .slide: data-background-color="#fff" -->
-          <img src="static/globosat-play.png" style="width: 1100px; margin:0" />
+<img src="static/globosat-play.png" style="width: 1100px; margin:0" />
 
         </script>
       </section>
@@ -333,7 +334,8 @@ gateway.get_json("/api/menu.json")
       <section data-markdown>
         <script type="text/template">
           <!-- .slide: data-background-color="#fff"-->
-          <img src="static/cache.png" style="width: 900px; margin: 0" />
+
+<img src="static/cache.png" style="width: 900px; margin: 0" />
 
         </script>
       </section>
@@ -610,9 +612,9 @@ Slides: http://blog.guilhermegarnier.com/evolucao-arquitetura/
 				// Optional reveal.js plugins
 				dependencies: [
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return true; } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return true; } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return true; }, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/notes/notes.js', async: true }
 				]

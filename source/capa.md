@@ -9,5 +9,3 @@
 <br />
 
 <p style="font-size: 200%">Guilherme Garnier</p>
-
-<pre style="display: none"><code></code></pre>
